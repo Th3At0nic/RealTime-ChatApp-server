@@ -2,6 +2,7 @@ const express = require("express");
 const socketio = require("socket.io");
 const http = require("http");
 
+const { addUser, removeUser, getUser, getUsersInRoom } = require("./user.js");
 const PORT = process.env.PORT || 5000;
 const clientPort = "http://localhost:3000";
 
